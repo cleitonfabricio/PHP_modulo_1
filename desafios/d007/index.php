@@ -14,7 +14,7 @@
             $mini = 1_518.00;
             $salario = $_GET['sal'] ?? $mini;
         ?>
-        <h1>Infome seu Salário</h1>
+        <h1>Informe seu Salário</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="sal">Salário (R$)</label>
             <input type="number" name="sal" id="sal" value="<?=$salario?>" step="0.01">
