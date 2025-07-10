@@ -22,7 +22,7 @@
     </main>
 
     <?php 
-        $sobra = $total
+        $sobra = $total;
         // total de sema
         $semana =  (int)($sobra / 604_800);
         $sobra = $sobra % 604_800;
@@ -41,14 +41,14 @@
 
     <section>
         <h2>Totalizando Tudo</h2>
-        <p>Analisando o valor que você digitou, <strong><?=$total?> segundos</strong> equivalem a um total de:</p>
+        <p>Analisando o valor que você digitou, <strong><?=number_format($total, 0, ",", ".")?> segundos</strong> equivalem a um total de:</p>
         <p>
             <ul>
-                <li><?=$semana?> Semanas</li>
-                <li><?=$dia?> dias</li>
-                <li><?=$hora?> horas</li>
-                <li><?=$minuto?> minutos</li>
-                <li><?=$segundo?> segundos</li>
+                <li><strong><?=$semana?></strong> Semanas.</li>
+                <li><strong><?=$dia?></strong> Dias.</li>
+                <li><strong><?=$hora?></strong> Horas.</li>
+                <li><strong><?=$minuto?></strong> minutos.</li>
+                <li><strong><?=$segundo?></strong> segundos.</li>
             </ul>
         </p>
     </section>
